@@ -29,19 +29,52 @@ h3 {
 }
 
 
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.flex_head {
+  background: firebrick;
+}
+
+.footer {
+  background: hotpink;
+}
+
+.main {
+  text-align: left;
+  background: forestgreen;
+}
+
+.aside-1 {
+  background: orange;
+}
+
+.aside-2 {
+  background: mediumaquamarine;
+}
+
+#payment_gateway_code {
+  https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/
+}
+
 
 
 </style>
 
 
-
-
-
-
 <html><div class="header">
     <center><h1>Brandon Quinn's Web Dev Blog</h1></center>
   </div>
-  <a href="#September 2nd, 2021">September, 2nd 2021</a> <a href="#September 8th, 2021">September 8th, 2021</a>
+  <a href="#September 2nd, 2021">September 2nd, 2021</a> <a href="#September 8th, 2021">September 8th, 2021</a> <a href="#September 18th, 2021">September 18th, 2021</a>
   <h2 id = "September 2nd, 2021">September 2nd, 2021:</h2>
   <p>This weeks blog is driven by: (<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">developer.mozilla.org/javascript</a>).</p>
   <p>and: (<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">developer.mozilla.org/css</a>).</p>
@@ -71,6 +104,7 @@ h3 {
   <p>Here is an example of what some Javascript code looks like:</p>
   <center><img id= "photo" src="https://i.stack.imgur.com/AZUmQ.jpg" alt="LA" style="width:50%"></center>
   </div>
+    <!-- NEW POST! -->
   <div>
   <hr size="2"width="100%"color="black">
   <h2 id = "September 8th, 2021">September 8th, 2021:</h2>
@@ -100,4 +134,38 @@ h3 {
   <center><img id= "photo" src="https://cdn.mos.cms.futurecdn.net/tp4hdWckjDprwPRnoyzk5o-1024-80.jpg.webp" alt="LA" style="width:50%"></center>
   
   </div>
+  <!-- NEW POST! -->
+  <div>
+    <hr size="2"width="100%"color="black">
+    <h2 id = "September 18th, 2021">September 18th, 2021:</h2>
+      <div class="wrapper">
+        <header class="flex_head">Online Payments and Payment Gateways</header>
+        <article class ="main">
+          <p>
+            This weeks blog is about payment gateways and how online payemnt methods
+            can be added to websites. The first article I read from justcoded.com teaches youwhat a payment gateway is 
+            and how to implement one. The article says a payment gateway processes credit cards at online and offline stores.
+            Basically all it is is "a tool to deal with all the financial transactions online."
+            You need basic things like: Authorisation, Capturing the transaction, the actual Sale,
+            the ability to Refund, and void transactions. These are simple steps and tasks that need to be implemented 
+            in order to make a smooth payment gateway. There are also "Hosted payment gateways." These would include PayPal,
+            Amazon Pay, Stripe, and others. These gateways take the customer away from your website to execute and complete a transaction.
+          </p>
+          <p>
+            The next article I read was a post about the best payment gateways to use for small businesses.
+            The first one they reccomend is "Authorize.net." It was founded in 1996 and has been able to integrate many features
+            into it's services. They accept many types of payment options like: PayPal, Apple Pay, and Google Pay. The Pros they list 
+            include "Strong Security and fraud prevention features", "Month-to-month billing with no long term contracts", and "Broad support
+            for multiple payments and currencies." They go on to list a few more. But they wrap up their post with a section titled 
+            "4 features to look for in a payment gatewat provider." The 4 features they list are: 
+            "Support different payment types and currencies", "Security", "Early termination penalties and data portability", and
+            "APIs and Developer tools." These are all super important for small businesses to integrate payment gateways because
+            they make sure the business is getting exactly what they want and they're providing safe and useful gateways to customers.
+          </p>
+        </article>
+        <aside class="aside-1"><a href="https://justcoded.com/blog/how-to-integrate-a-payment-gateway-into-a-website/">justcoded.com</a></aside>
+        <aside class="aside-2"><a href="https://www.merchantmaverick.com/best-payment-gateways-online-payment-processing/">merchantmaverick.com</a></aside>
+        <footer class="footer"><a href="https://www.geeksforgeeks.org/create-an-online-payment-ui-design-using-html-css/">Click here to see example code for a payment gateway.</a></footer>
+      </div>
+    </div>
   </html>
